@@ -9,6 +9,7 @@
 #include <vector>
 #include <list>
 #include <algorithm>
+#include "Test.h"
 
 extern "C" {
 #include <pthread.h>
@@ -55,7 +56,7 @@ static int init_thread(pthread_t pptr) {
 }
 
 int main(int argc, char* argv[]) {
-
+	cout << "Test version: " << Test_VERSION_MAJOR << "." << Test_VERSION_MINOR << " running." << endl;
 	ObjList<pthread_t> d(4);
 	for_each(d.data->begin(), d.data->end(), init_thread);
 
