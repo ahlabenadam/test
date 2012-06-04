@@ -14,4 +14,5 @@ include_directories("${PROJECT_BINARY_DIR}")
 
 add_executable(test1 test.cpp)
 add_executable(shmget1 shmget1.c)
+add_executable(matrix_quiz matrix_quiz.cpp)
 
